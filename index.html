@@ -254,9 +254,19 @@
 	.duration(2000)
 	.ease("elastic")
 	.attr("r", function (d, i) {
-	    return 4;
+		console.log(d[2])
+		if (d[2] === k) {
+			return 10
+		} else {
+			return 4;
+		}
 	})
 
+	// Auto group
+	// setInterval(function () {
+	// 	findGroups();
+	// 	updateMeans();
+	// }, 1000)
 
 
 </script>
